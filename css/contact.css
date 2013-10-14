@@ -1,0 +1,89 @@
+.input_validation {
+	display: none;
+}
+
+.message {
+	padding: none;
+} 
+
+.error {
+	
+	color: #F85811;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+.good {
+	color: #F99016;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+}
+
+#content_area {
+	background-color: #F6F6F6;
+}
+
+#content_area .contact {
+	margin: 10px;
+}
+
+#content_area .contact h3 {
+	color: #F95811;
+	font-weight: bold;
+	font-size: 18px;
+	margin-left: 10px;
+}
+
+#content_area .contact h3 span.log {
+	color: #5C5C5C;
+}
+
+#content_area .contact form {
+	margin-top: 3px;
+}
+
+
+#content_area .contact form table td label span.required {
+	color: #F85811;
+}
+
+#content_area .contact form table td {
+	padding: 15px 10px;
+}
+
+#content_area .contact form table input[type='text'] {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: 400px;
+	height: 20px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#content_area .contact form table textarea {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: 400px;
+	height: 200px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+}
+
+#content_area .contact form table input[type='submit'] {
+	padding: 10px;
+	cursor: pointer;
+	background: linear-gradient(#FECB2C, #F99016);
+	background: -webkit-linear-gradient(#FECB2C, #F99016);
+	background: -moz-linear-gradient(#FECB2C, #F99016);
+	background: -o-linear-gradient(#FECB2C, #F99016);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FECB2C', EndColorStr='#F99016');
+} 
+
+
+
+
+

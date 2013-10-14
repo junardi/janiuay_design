@@ -1,0 +1,689 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	font: inherit;
+	font-size: 100%;
+	vertical-align: baseline;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #FFF;
+	color: #5c5c5c;
+	line-height: 1.5em;
+}
+
+a {
+	color: #CCCCC9;
+}
+
+img {
+	border: none;
+}
+
+p {
+	font-size: 90%;
+}
+
+.first {
+	color: #FFF;
+}
+
+.second {
+	color: #CCCCC9;
+}
+
+.active {
+	color: #FFF;
+}
+
+input[type='text'], input[type='password'], textarea {
+	color: #5c5c5c;
+}
+
+input:focus, textarea:focus { 
+	outline: none;
+}
+
+abbr[title], acronym[title] {
+    border-bottom-width: 0;
+}
+
+/* below is for the navigation */
+
+#navigation {
+	background: linear-gradient(#002D68, #001C4E);
+	background: -webkit-linear-gradient(#002D68, #001C4E);
+	background: -moz-linear-gradient(#002D68, #001C4E);
+	background: -o-linear-gradient(#002D68, #001C4E);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#002D68', EndColorStr='#001C4E');
+	-webkit-border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom: 5px solid #F6F6F6;
+	overflow: hidden;
+	height: 66px;
+}
+
+#navigation ul {
+	list-style: none;
+	padding: none;
+}
+
+#navigation #left_nav #second_nav {
+	display: none;
+}
+
+#navigation ul li {
+	display: inline;
+}
+
+#navigation #left_nav > ul {
+	margin-left: 20px;
+}
+
+#navigation #left_nav ul  li {
+	float: left;
+	padding: 20px 20px 20px 20px;
+	border-right: 1px solid #001C4E;
+	border-left: 1px solid #002D68;
+}
+
+#navigation #left_nav  li  a{
+	font-size: 15px;
+}
+
+#navigation #left_nav  li:last-child {
+	border-right: none;
+}
+
+#navigation #left_nav li:first-child {
+	border-left: none;
+}
+
+#navigation #left_nav ul li a {	
+	text-decoration: none;
+}
+
+#navigation #left_nav ul li a:hover {
+	color: #FFF;
+	font-size: 16px;
+}
+
+#navigation #right_nav ul {
+	float: right;
+	margin-right: 20px;
+}
+
+#navigation #right_nav ul li {
+	float: right;
+	padding: 20px 20px 20px 20px;
+	border-right: 1px solid #001C4E;
+	border-left: 1px solid #002D68;
+}
+
+#navigation #right_nav ul li:last-child {
+	border-left: none;
+}
+
+#navigation #right_nav ul li:first-child {
+	border-right: none;
+}
+
+/* Main Navigation dropdowns below */
+
+.first_drop {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	z-index: 20;
+	display: none;
+}
+
+.second_drop {
+	position: absolute;
+	top: 70px;
+	left: 160px;
+	z-index: 20;
+	display: none;
+}
+
+.third_drop {
+	position: absolute;
+	top: 70px;
+	left: 281px;
+	z-index: 20;
+	display: none;
+}
+
+.fourth_drop {
+	position: absolute;
+	top: 70px;
+	left: 0px;
+	z-index: 20;
+	display: none;
+}
+
+/* fifth drop is not yet available */
+
+.sixth_drop {
+	position: absolute;
+	top: 70px;
+	left: 302px;
+	z-index: 20;
+	display: none;
+}
+
+/* dropdown and side dropdowns below */
+
+	/* for second drop below */
+
+	/* second level */
+		
+		/* second side drop */
+		.second_drop .second_level_second_side_drop {
+			position: absolute;
+			top: 65px;
+			left: 236px;
+			z-index: 20;
+			width: 250px;
+			display: none;
+		}
+
+		.second_drop .second_level_second_side_drop img {
+			position: absolute;
+			top: 21px;
+			left: -36px;
+			padding-left: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+	
+	/* third level */
+	
+		/* first side drop */
+		.second_drop .third_level_first_side_drop {
+			position: absolute;
+			top: 65px;
+			left: 528px;
+			z-index: 20;
+			width: 250px;
+			display: none;
+		}
+
+		.second_drop .third_level_first_side_drop img {
+			position: absolute;
+			top: 21px;
+			left: -36px;
+			padding-left: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		
+		/* second side drop*/
+		
+		.second_drop .third_level_second_side_drop {
+			position: absolute;
+			top: 105px;
+			left: 528px;
+			z-index: 20;
+			width: 250px;
+			display: none;
+		}
+
+		.second_drop .third_level_second_side_drop img {
+			position: absolute;
+			top: 21px;
+			left: -36px;
+			padding-left: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		} 
+		
+		/* third side drop */
+		
+		.second_drop .third_level_third_side_drop {
+			position: absolute;
+			top: 149px;
+			left: 528px;
+			z-index: 20;
+			width: 250px;
+			display: none;
+		}
+
+		.second_drop .third_level_third_side_drop img {
+			position: absolute;
+			top: 21px;
+			left: -36px;
+			padding-left: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		
+		/* fourth side drop */
+		
+		.second_drop .third_level_fourth_side_drop {
+			position: absolute;
+			top: 193px;
+			left: 528px;
+			z-index: 20;
+			width: 250px;
+			display: none;
+		}
+
+		.second_drop .third_level_fourth_side_drop img {
+			position: absolute;
+			top: 21px;
+			left: -36px;
+			padding-left: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		
+		/* fifth side drop */
+		
+		.second_drop .third_level_fifth_side_drop {
+			position: absolute;
+			top: 238px;
+			left: 528px;
+			z-index: 20;
+			width: 250px;
+			display: none;
+		}
+
+		.second_drop .third_level_fifth_side_drop img {
+			position: absolute;
+			top: 21px;
+			left: -36px;
+			padding-left: 20px;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		
+	/* end second drop */
+	
+	/* for sixth drop below */
+	
+		/* second level */
+		
+			.sixth_drop .second_level_first_side_drop {
+				position: absolute;
+				top: 25px;
+				left: 254px;
+				z-index: 20;
+				width: auto;
+				display: none;
+			}
+
+			.sixth_drop .second_level_first_side_drop img {
+				position: absolute;
+				top: 21px;
+				left: -36px;
+				padding-left: 20px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+			}
+	
+	/* end sixth drop */
+	
+/* General design for navigation dropdowns below*/
+
+.is_dropdown .arrow {
+	text-align: left;
+}
+
+.is_dropdown .arrow img {
+	margin-left: 30px;
+}
+
+.is_dropdown .wrap_sub {
+	margin-top: -7px;
+	background: linear-gradient(#001C4E, #002D68);
+	background: -webkit-linear-gradient(#001C4E, #002D68);
+	background: -moz-linear-gradient(#001C4E, #002D68);
+	background: -o-linear-gradient(#001C4E, #002D68);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#001C4E', EndColorStr='#002D68');
+	padding: 10px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.is_dropdown .sub {
+	list-style: none;
+}
+
+.is_dropdown .sub li {
+	margin-top: 10px;
+	padding: 5px 10px;
+}
+
+.is_dropdown .sub li a{
+	text-decoration: none;
+}
+
+.is_dropdown .sub li a:hover {
+	color: #FFF;
+}
+
+/* Branding below */
+
+#branding {	
+	padding: 15px 0px;
+}
+
+#branding #head_title div{	
+	margin-left: 30px;
+}
+
+#branding #head_title div img {
+	width: 89px;
+	height: 85px;
+}
+
+#branding #head_title .tag_right {
+	margin-left: 10px;
+	margin-top: 30px;
+}
+
+#branding #head_title h2 {
+	font-size: 40px;
+	color: #444444;
+	font-weight: normal;
+}
+
+#branding #head_title p {
+	font-size: 15px;
+	margin-top: 5px;
+	color: #919191;
+}
+
+#branding #search_area form {
+	float: right;
+	margin-right: 30px;
+	margin-top: 30px;
+}
+
+#branding #search_area form #search_something {
+	border: 1px solid #ABADB3;
+	height: 15px;
+	padding: 5px;
+	width: 150px;
+}
+
+#branding #search_area form #search_something:focus {
+	border: 1px solid #919191;
+}
+
+#branding #search_area form a img {
+	vertical-align: bottom;
+}
+
+/*Featured Below*/
+
+#featured {
+	background-color: #F6F6F6;
+	height: 251px;
+	position: relative;
+}
+
+#featured .featured_image {
+	position: relative;
+	z-index: 0;
+}
+
+#featured .left_arrow {
+	position: absolute;
+	top: 102px;
+	left: 15px;
+	z-index: 4;
+	cursor: pointer;
+	display: none;
+}
+
+#featured .right_arrow {
+	position: absolute ;
+	top: 102px;
+	left: 683px;
+	z-index: 4;
+	cursor: pointer;
+	display: none;
+}
+
+#featured .featured_image div {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+#featured .featured_image div.current {
+	z-index: 2;
+}
+
+#featured .featured_image div.previous {
+	z-index: 1;
+}
+
+#featured .login_area  h3{
+	color: #F95811;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 10px;
+} 
+
+#featured .login_area h3 span.log {
+	color: #5C5C5C;
+} 
+
+#featured .login_area  p {
+	margin-top: 15px;
+}
+
+#featured .login_area input[type='text'] {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: auto;
+	height: 20px;
+}
+
+#featured .login_area input[type='password'] {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: auto;
+	height: 20px;
+}
+
+#featured .login_area input[type='submit'] {
+	margin-top: 20px;
+	padding: 10px 10px;
+	background: linear-gradient(#FECB2C, #F99016);
+	background: -webkit-linear-gradient(#FECB2C, #F99016);
+	background: -moz-linear-gradient(#FECB2C, #F99016);
+	background: -o-linear-gradient(#FECB2C, #F99016);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FECB2C', EndColorStr='#F99016');
+	color: #FFF;
+	cursor: pointer;
+	border-right: 2px solid #9C9C9C;
+	border-bottom: 2px solid #9C9C9C;
+}
+
+#featured .login_area a:hover {
+	color: #F95811;
+}
+
+/* bizsolutions below */
+
+#write_ups {
+	padding: 30px 0px;
+	border-bottom: 1px solid #FFBF16;
+}
+
+#write_ups  .main_write_ups h1{
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+#write_ups  .main_write_ups p.top {
+	margin-bottom: 20px;
+}
+
+#write_ups  .main_write_ups p {
+	margin-top: 20px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+#write_ups  .main_write_ups a {
+	color: #F85811;
+}
+
+#write_ups  .main_write_ups .topics {
+	background-color: #F6F6F6;
+	border: 1px solid #E8E8E8;
+	-webkit-border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	margin-left: 20px;
+}
+
+#write_ups  .main_write_ups .topics img {
+	width: 120px;
+	height: 87px;
+	margin-top: 60px;
+	margin-left: 10px;
+}
+
+#write_ups  .main_write_ups h2 {
+	background: linear-gradient(#002D68, #001C4E);
+	background: -webkit-linear-gradient(#002D68, #001C4E);
+	background: -moz-linear-gradient(#002D68, #001C4E);
+	background: -o-linear-gradient(#002D68, #001C4E);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#002D68', EndColorStr='#001C4E');
+	font-size: 25px;
+	padding: 25px 0px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	padding-left: 20px;
+}
+
+#write_ups  .main_write_ups h4 {
+	font-weight: bold;
+	margin: 20px 0px 20px 20px;
+}
+
+#write_ups .other_write_ups ul {
+	list-style: none;
+	margin-top: 20px;
+}
+
+#write_ups .other_write_ups ul  li {
+	margin-top: 10px;
+}
+
+#write_ups .other_write_ups ul  li a {
+	margin-left: 5px;
+	color: #5c5c5c;
+}
+
+#write_ups .other_write_ups button {
+	margin-top: 20px;
+	padding: 5px 10px;
+	color: #FFF;
+	border: none;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	background: linear-gradient(#002D68, #001C4E);
+	background: -webkit-linear-gradient(#002D68, #001C4E);
+	background: -moz-linear-gradient(#002D68, #001C4E);
+	background: -o-linear-gradient(#002D68, #001C4E);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#002D68', EndColorStr='#001C4E');
+}
+
+/* below is the footer */
+
+#footer {
+	margin-top: 10px;
+	text-align: center;
+} 
+
+#footer a {
+	color: #F85811;
+}
+
+
+/* content login below*/
+
+#content_area .login_area  h3{
+	color: #F95811;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 10px;
+} 
+
+#content_area .login_area h3 span.log {
+	color: #5C5C5C;
+} 
+
+#content_area .login_area  p {
+	margin-top: 15px;
+}
+
+#content_area .login_area input[type='text'] {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: auto;
+	height: 20px;
+}
+
+#content_area .login_area input[type='password'] {
+	border: 1px solid #ABADB3;
+	padding: 3px 3px;
+	width: auto;
+	height: 20px;
+}
+
+#content_area .login_area input[type='submit'] {
+	margin-top: 20px;
+	padding: 10px 10px;
+	background: linear-gradient(#FECB2C, #F99016);
+	background: -webkit-linear-gradient(#FECB2C, #F99016);
+	background: -moz-linear-gradient(#FECB2C, #F99016);
+	background: -o-linear-gradient(#FECB2C, #F99016);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorStr='#FECB2C', EndColorStr='#F99016');
+	color: #FFF;
+	cursor: pointer;
+	border-right: 2px solid #9C9C9C;
+	border-bottom: 2px solid #9C9C9C;
+}
+
+#content_area .login_area a:hover {
+	color: #F95811;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
